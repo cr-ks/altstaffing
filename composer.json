@@ -1,0 +1,12 @@
+{
+    "name": "ALT STAFFING THEME",
+    "description": "A custome wordpress theme for Alt Staffing",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "davidmichael",
+            "email": "davidmichaelandco@gmail.com"
+        }
+    ],
+    "require": {}
+}

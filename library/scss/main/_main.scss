@@ -1,0 +1,200 @@
+// ----------------------------------------------------------------------------------//
+// ICA SCSS File
+// David MIchael | March 26, 2019 | Updated: 
+// ----------------------------------------------------------------------------------//
+
+$break: 800px;
+
+$dark-grey: #3e3d3f;
+$light-green: #5dc9e6;
+$light-red: #e54c3e;
+$background-grey: #dfe2e4;
+
+
+body {
+  font-family: 'MarkOT', sans-serif !important;
+}
+
+// $background-color: #405563;
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: 1.4em;
+  font-weight: 800;
+  text-decoration: none !important;
+  color: $light-green !important;
+
+  &:hover {
+    color: $dark-grey !important;
+  }
+
+  transition: .3s ease-in;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: $break) {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.3vw;
+  font-weight: 800;
+  color: $dark-grey;
+
+  @media screen and (max-width: $break) {
+    font-size: 3em;
+  }
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  color: $light-red;
+  font-size: 2.6vw;
+  font-weight: 800;
+  line-height: 1em;
+
+  @media screen and (max-width: $break) {
+    font-size: 1.3em;
+  }
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2.8vw;
+  margin: 0;
+
+  @media screen and (max-width: $break) {
+    font-size: 2.3em;
+  }
+}
+
+.page-container {}
+
+.main-container {}
+
+
+.hero-sub-container {
+  padding: 3% 8%;
+
+  p {
+    color: #fff;
+    width: 80%;
+  }
+}
+
+// ----- SECTIONS
+
+.Hero { 
+  padding: 0 0 0 8%; 
+  min-height: 40vw;
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  h1 {
+    padding: 10vw 8% 0;
+    font-size: 7vw;
+    color: #fff;
+
+    @media screen and (max-width: $break) {
+      font-size: 4em;
+    }
+  }
+}
+
+.Single-Column-Panel {}
+
+.Two-Column-Panel {}
+
+.Four-Column-Panel {}
+
+.Graphic-Panel {}
+
+.Full-Image-Panel {
+  min-height: 40vw;
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  h2 {
+    padding: 4%;
+    color: #fff;
+  }
+}
+
+.Inline-Image-Panel {
+  img {
+    margin: 2% 0;
+  }
+}
+
+.Contact-Panel {
+
+}
+
+.Standard-Footer {}
+
+
+// ----- SECTION BACKGROUNDS
+
+.section-white {
+  padding: 3% 8%;
+  background-color: #fff;
+}
+
+.section-grey {
+  padding: 3% 8%;
+  background-color: $background-grey;
+}
+
+.section-blue {
+  padding: 3% 8%;
+  background-color: $light-green;
+}
+
+// --------------------------
+
+.wp-block-button {
+  margin: 20px 0;
+}
+
+.wp-block-button__link {
+  background-color: $light-green;
+  border-radius: 6px;
+  font-size: .7em;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  color: #fff !important;
+  font-weight: 600; 
+}
+
+// ----- BLOCK STYLES -----
+ 
+.block-national {
+  width: 60%;
+}
+
+.block-quote {
+  font-style: oblique;
+  color: $dark-grey;
+  font-size: 2.2vw;
+
+  @media screen and (max-width: $break) {
+    font-size: 1.5em;
+  }
+}

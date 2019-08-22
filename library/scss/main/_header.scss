@@ -1,0 +1,67 @@
+// ----------------------------------------------------------------------------------//
+// ICA SCSS File
+// David MIchael | March 26, 2019 | Updated: 
+// ----------------------------------------------------------------------------------//
+
+$break: 800px;
+
+$dark-grey: #3e3d3f;
+$background-color: #405563;
+$light-green: #5dc9e6;
+
+.header-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.logo-container {
+  float: right;
+  margin: 0 0 2%;
+  padding: 1% 0 1% 2%;
+  padding-right: 5%;
+  width: 20%;
+  background-color: $background-color;
+  border-radius: 0 0 0 20px;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $break) {
+    width: 70%;
+    padding: 20px 50px 20px 30px;
+    margin: 0 0 30px;
+    border-radius: 0 0 0 10px;
+  }
+}
+
+.navigation-container {
+  float: left;
+  width: 80%;
+  margin: 0;
+  padding: 2% 0 0 10%;
+
+  @media screen and (max-width: $break) {
+    display: none;
+  }
+}
+
+.mobile-navigation {
+  display: block;
+}
+
+.nav li a {
+  color: $dark-grey !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+
+  &:hover {
+    color: $light-green !important;
+    text-decoration: none;
+  }
+}
+
+.clear {
+  clear: both;
+}

@@ -1,0 +1,31 @@
+// ----------------------------------------------------------------------------------//
+// ICA SCSS File
+// David MIchael | March 26, 2019 | Updated: 
+// ----------------------------------------------------------------------------------//
+
+$break: 800px;
+
+$dark-grey: #3e3d3f;
+$light-green: #5dc9e6;
+$light-red: #e54c3e;
+$background-grey: #dfe2e4;
+
+.footer {
+  width: 100%;
+  background-color: $light-green;
+  padding: 2% 8% 3%;
+}
+
+.sub-footer {
+  color: $dark-grey;
+
+  a {
+    font-weight: nortmal !important;
+    font-size: 1em !important;
+    color: $dark-grey !important;
+  }
+
+  span {
+    color: #fff;
+  }
+}
