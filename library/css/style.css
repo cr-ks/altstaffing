@@ -2871,21 +2871,21 @@ h4 {
 /* line 13, ../scss/main/_footer.scss */
 .footer {
   width: 100%;
-  background-color: #5dc9e6;
+  background-color: #e54c3e;
   padding: 2% 8% 3%;
 }
 
-/* line 19, ../scss/main/_footer.scss */
+/* line 20, ../scss/main/_footer.scss */
 .sub-footer {
   color: #3e3d3f;
 }
-/* line 22, ../scss/main/_footer.scss */
+/* line 23, ../scss/main/_footer.scss */
 .sub-footer a {
   font-weight: nortmal !important;
   font-size: 1em !important;
   color: #3e3d3f !important;
 }
-/* line 28, ../scss/main/_footer.scss */
+/* line 29, ../scss/main/_footer.scss */
 .sub-footer span {
   color: #fff;
 }
