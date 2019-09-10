@@ -12,9 +12,19 @@ $background-grey: #dfe2e4;
 
 .footer {
   width: 100%;
-  // background-color: $light-green;
   background-color: $light-red;
   padding: 2% 8% 3%;
+  &-image {
+    background-image: url('/wp-content/themes/alt/library/images/footer.png');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 300px;
+    width: 400px;
+    background-size: 400px;
+    margin-top: -20px;
+    margin-bottom: -77px;
+    margin-right: -80px;
+  }
 }
 
 .sub-footer {

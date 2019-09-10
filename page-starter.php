@@ -107,6 +107,9 @@ if (shortcodes.length > 0) {
 			case 'Standard-Footer':
 			insert = `${additional_tag}<div class="${shortcodes[i].type}">FOOTER`;
 
+			// casr 'Interview':
+
+
 			default:
 			insert = `${additional_tag}<div class="${shortcodes[i].type} section-${shortcodes[i].background}">`;
 		}

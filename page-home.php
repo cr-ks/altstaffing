@@ -36,11 +36,7 @@
 		<!-- END ARTICLE -->
 
 	</main>
-
-	<div class="resource-link">
-		<a href="/resources"><img src="/wp-content/themes/ica_master/library/images/resourcesbutton.png"></a>
-	</div>
-
+	
 </div>
 
 <!-- FOOTER -->

@@ -15,13 +15,12 @@ $light-green: #5dc9e6;
 }
 
 .logo-container {
-  float: right;
-  margin: 0 0 2%;
+  float: left;
+  margin: 0;
   padding: 1% 0 1% 2%;
-  padding-right: 5%;
-  width: 20%;
-  background-color: $background-color;
-  border-radius: 0 0 0 20px;
+  width: 50%;
+  // background-color: $background-color;
+  // border-radius: 0 0 0 20px;
 
   img {
     width: 100%;
@@ -35,11 +34,21 @@ $light-green: #5dc9e6;
   }
 }
 
-.navigation-container {
+.site-description {
+  font-family: 'Montserrat', sans-serif;
   float: left;
-  width: 80%;
+  width: 50%;
+  padding: 20px;
+  font-size: 3em;
+  text-align: center;
+  word-spacing: 100vw;
+}
+
+.navigation-container {
+  // float: left;
+  width: 100%;
   margin: 0;
-  padding: 2% 0 0 10%;
+  padding: 0;
 
   @media screen and (max-width: $break) {
     display: none;
@@ -55,6 +64,7 @@ $light-green: #5dc9e6;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.2em;
+  padding: 20px 3vw;
 
   &:hover {
     color: $light-green !important;

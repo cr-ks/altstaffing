@@ -40,6 +40,7 @@
 
 		<!-- FONTS ADDED BY DAVID -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
 
 	</head>
 
@@ -47,6 +48,11 @@
 
 		<div id="container">
 			<header class="header-container" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+				<div class="logo-container">
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/uploads/2019/09/PrimaryLogo_1200px.png"></a>
+				</div>
+				<div class="site-description"><?php bloginfo('description'); ?></div>
+				<div class="clear"></div>
 				<div class="navigation-container">
 					<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
@@ -61,9 +67,6 @@
         			               'depth' => 0,                                   // limit the depth of the nav
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
-				</div>
-				<div class="logo-container">
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/uploads/2019/03/logo.png"></a>
 				</div>
 				<div class="clear" />
 			</header>

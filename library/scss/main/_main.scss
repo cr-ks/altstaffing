@@ -12,13 +12,15 @@ $background-grey: #dfe2e4;
 
 
 body {
-  font-family: 'MarkOT', sans-serif !important;
+  // font-family: 'MarkOT', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
+  background-color: #fff;
 }
 
 // $background-color: #405563;
 
 p {
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
 }
 
@@ -38,6 +40,7 @@ a {
 h1 {
   margin: 0;
   padding: 0;
+  color: $light-red;
 
   @media screen and (max-width: $break) {
     font-size: 3em;
@@ -59,7 +62,7 @@ h2 {
 h3 {
   margin: 0;
   padding: 0;
-  color: $light-red;
+  color: $dark-grey;
   font-size: 2.6vw;
   font-weight: 800;
   line-height: 1em;
@@ -145,6 +148,50 @@ h4 {
 
 .Contact-Panel {
 
+}
+
+.Interview {
+  padding: 3% 8%;
+  h3 {
+    margin: 20px 0;
+    padding: 0 0 40px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  p {
+    // display: none;
+  }
+}
+
+.Events {
+  padding: 3% 8%;
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  h5 {
+    font-size: 1.5vw;
+  }
+  h6 {
+    font-size: 1.5vw;
+    padding: 30px;
+    background-color: $light-green;
+  }
+  p {
+    padding: 30px;
+    background-color: #dfdfdf;
+  }
+}
+
+.Image {
+  padding: 3% 8%;
+}
+
+.List {
+  li {
+    list-style-image: url('/wp-content/uploads/2019/09/icon.png');
+  }
 }
 
 .Standard-Footer {}
