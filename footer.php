@@ -1,10 +1,6 @@
-			<div class="pre-footer">
-
-			</div>
-			
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div class="footer-navigation-container" style="float: left">
+				<div class="footer-navigation-container">
 					<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -19,9 +15,6 @@
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 				</div>
-					<div class="footer-image" style="float: right">
-						<!-- <img src="/wp-content/themes/alt/library/images/footer.png" /> -->
-					</div>
 				<!-- <div class="social" style="float: right">
 					<a href="https://www.facebook.com/TheICAGroup1/"><img src="/wp-content/themes/ica_master/library/images/social/facebook.png"></a>
 					<a href="https://twitter.com/TheICAGroup"><img src="/wp-content/themes/ica_master/library/images/social/twitter.png"></a>
@@ -42,7 +35,7 @@
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
-
+		<script src='/wp-content/themes/alt/library/js/shortcodes.js'></script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

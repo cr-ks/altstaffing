@@ -68,5 +68,5 @@
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 				</div>
-				<div class="clear" />
+				<div class="clear"></div>
 			</header>

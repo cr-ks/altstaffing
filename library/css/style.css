@@ -2281,7 +2281,7 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  /* line 26, ../scss/breakpoints/_768up.scss */
+  /* line 27, ../scss/breakpoints/_768up.scss */
   .wrap {
     width: 760px;
   }
@@ -2292,19 +2292,22 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 42, ../scss/breakpoints/_768up.scss */
+  /* line 43, ../scss/breakpoints/_768up.scss */
   .nav {
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 44, ../scss/breakpoints/_768up.scss */
+  /* line 45, ../scss/breakpoints/_768up.scss */
   .nav ul {
-    background: #323944;
-    margin-top: 0;
+    width: 200px;
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: rgba(245, 245, 245, 0.8);
   }
-  /* line 48, ../scss/breakpoints/_768up.scss */
+  /* line 52, ../scss/breakpoints/_768up.scss */
   .nav li {
     float: left;
     position: relative;
@@ -2313,7 +2316,7 @@ you can add resource intensive styles.
     */
     /* showing sub-menus */
   }
-  /* line 52, ../scss/breakpoints/_768up.scss */
+  /* line 56, ../scss/breakpoints/_768up.scss */
   .nav li a {
     border-bottom: 0;
     /*
@@ -2321,52 +2324,57 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 59, ../scss/breakpoints/_768up.scss */
+  /* line 63, ../scss/breakpoints/_768up.scss */
   .nav li a:hover, .nav li a:focus {
     color: #fff;
     text-decoration: underline;
   }
-  /* line 71, ../scss/breakpoints/_768up.scss */
+  /* line 75, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
     position: absolute;
     visibility: hidden;
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 80, ../scss/breakpoints/_768up.scss */
+  /* line 81, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
+    text-align: left;
+    padding: 0 0 0 10px;
+    width: 200px;
     /*
     if you need to go deeper, go nuts
     just remember deeper menus suck
     for usability. k, bai.
     */
   }
-  /* line 82, ../scss/breakpoints/_768up.scss */
+  /* line 86, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
+    margin: 0;
+    padding: 0;
     display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
+    background: none;
   }
-  /* line 99, ../scss/breakpoints/_768up.scss */
+  /* line 92, ../scss/breakpoints/_768up.scss */
+  .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
+  .nav li ul.children li a:hover,
+  .nav li ul.children li a:focus {
+    background: none;
+  }
+  /* line 105, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 109, ../scss/breakpoints/_768up.scss */
+  /* line 115, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 124, ../scss/breakpoints/_768up.scss */
+  /* line 130, ../scss/breakpoints/_768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
@@ -2376,28 +2384,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 144, ../scss/breakpoints/_768up.scss */
+  /* line 150, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 148, ../scss/breakpoints/_768up.scss */
+  /* line 154, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 153, ../scss/breakpoints/_768up.scss */
+  /* line 159, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 158, ../scss/breakpoints/_768up.scss */
+  /* line 164, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 166, ../scss/breakpoints/_768up.scss */
+  /* line 172, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2422,7 +2430,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 274, ../scss/breakpoints/_768up.scss */
+  /* line 280, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2616,25 +2624,25 @@ be set to display none.
   font-family: MarkOT;
   src: url("/wp-content/themes/ica_master/library/scss/fonts/MarkOT.otf");
 }
-/* line 12, ../scss/main/_header.scss */
+/* line 13, ../scss/main/_header.scss */
 .header-container {
   width: 100%;
   background-color: #fff;
 }
 
-/* line 17, ../scss/main/_header.scss */
+/* line 18, ../scss/main/_header.scss */
 .logo-container {
   float: left;
   margin: 0;
   padding: 1% 0 1% 2%;
   width: 50%;
 }
-/* line 25, ../scss/main/_header.scss */
+/* line 26, ../scss/main/_header.scss */
 .logo-container img {
   width: 100%;
 }
 @media screen and (max-width: 800px) {
-  /* line 17, ../scss/main/_header.scss */
+  /* line 18, ../scss/main/_header.scss */
   .logo-container {
     width: 70%;
     padding: 20px 50px 20px 30px;
@@ -2643,7 +2651,7 @@ be set to display none.
   }
 }
 
-/* line 37, ../scss/main/_header.scss */
+/* line 38, ../scss/main/_header.scss */
 .site-description {
   font-family: 'Montserrat', sans-serif;
   float: left;
@@ -2654,138 +2662,161 @@ be set to display none.
   word-spacing: 100vw;
 }
 
-/* line 47, ../scss/main/_header.scss */
+/* line 48, ../scss/main/_header.scss */
 .navigation-container {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 47, ../scss/main/_header.scss */
+  /* line 48, ../scss/main/_header.scss */
   .navigation-container {
     display: none;
   }
 }
 
-/* line 58, ../scss/main/_header.scss */
+/* line 59, ../scss/main/_header.scss */
 .mobile-navigation {
   display: block;
 }
 
-/* line 62, ../scss/main/_header.scss */
+/* line 63, ../scss/main/_header.scss */
+.nav {
+  margin: 0 20px 0;
+}
+/* line 65, ../scss/main/_header.scss */
+.nav ul {
+  margin-left: 0 !important;
+}
+/* line 68, ../scss/main/_header.scss */
+.nav li {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-indent: 0;
+}
+/* line 75, ../scss/main/_header.scss */
 .nav li a {
+  margin: 0;
   color: #3e3d3f !important;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
-  padding: 20px 3vw;
+  font-size: 1em;
+  padding: 10px 40px 30px;
 }
-/* line 69, ../scss/main/_header.scss */
+/* line 83, ../scss/main/_header.scss */
 .nav li a:hover {
-  color: #5dc9e6 !important;
+  color: #e54c3e !important;
+  background-color: #f5f5f2;
   text-decoration: none;
 }
 
-/* line 75, ../scss/main/_header.scss */
+/* line 92, ../scss/main/_header.scss */
+.sub-menu ul {
+  margin: 0 !important;
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 0 0 20px 0;
+}
+/* line 97, ../scss/main/_header.scss */
+.sub-menu li {
+  margin: 5px 0;
+  padding: 0;
+}
+
+/* line 109, ../scss/main/_header.scss */
 .clear {
   clear: both;
 }
 
-/* line 14, ../scss/main/_main.scss */
+/* line 15, ../scss/main/_main.scss */
+.hide {
+  display: none;
+}
+
+/* line 19, ../scss/main/_main.scss */
+.show {
+  display: block;
+}
+
+/* line 28, ../scss/main/_main.scss */
 body {
   font-family: 'Open Sans', sans-serif !important;
   background-color: #fff;
 }
-
-/* line 22, ../scss/main/_main.scss */
-p {
-  margin: 20px 0;
-  padding: 0;
+/* line 31, ../scss/main/_main.scss */
+body li {
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
-/* line 27, ../scss/main/_main.scss */
+/* line 38, ../scss/main/_main.scss */
 a {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 800;
   text-decoration: none !important;
-  color: #5dc9e6 !important;
   transition: .3s ease-in;
 }
-/* line 33, ../scss/main/_main.scss */
+/* line 44, ../scss/main/_main.scss */
 a:hover {
   color: #3e3d3f !important;
 }
 
-/* line 40, ../scss/main/_main.scss */
+/* line 51, ../scss/main/_main.scss */
+p {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+/* line 57, ../scss/main/_main.scss */
 h1 {
   margin: 0;
   padding: 0;
+  font-size: 2em;
+  font-weight: 800;
   color: #e54c3e;
 }
 @media screen and (max-width: 800px) {
-  /* line 40, ../scss/main/_main.scss */
+  /* line 57, ../scss/main/_main.scss */
   h1 {
     font-size: 3em;
   }
 }
 
-/* line 50, ../scss/main/_main.scss */
+/* line 69, ../scss/main/_main.scss */
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 3.3vw;
+  font-size: 1.5em;
   font-weight: 800;
   color: #3e3d3f;
 }
 @media screen and (max-width: 800px) {
-  /* line 50, ../scss/main/_main.scss */
+  /* line 69, ../scss/main/_main.scss */
   h2 {
     font-size: 3em;
   }
 }
 
-/* line 62, ../scss/main/_main.scss */
+/* line 81, ../scss/main/_main.scss */
 h3 {
   margin: 0;
   padding: 0;
-  color: #3e3d3f;
-  font-size: 2.6vw;
+  font-size: 3vw;
   font-weight: 800;
   line-height: 1em;
+  color: #3e3d3f;
 }
 @media screen and (max-width: 800px) {
-  /* line 62, ../scss/main/_main.scss */
+  /* line 81, ../scss/main/_main.scss */
   h3 {
     font-size: 1.3em;
   }
 }
 
-/* line 75, ../scss/main/_main.scss */
-h4 {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-size: 2.8vw;
-  margin: 0;
-}
-@media screen and (max-width: 800px) {
-  /* line 75, ../scss/main/_main.scss */
-  h4 {
-    font-size: 2.3em;
-  }
-}
-
-/* line 92, ../scss/main/_main.scss */
-.hero-sub-container {
-  padding: 3% 8%;
-}
-/* line 95, ../scss/main/_main.scss */
-.hero-sub-container p {
-  color: #fff;
-  width: 80%;
-}
-
-/* line 103, ../scss/main/_main.scss */
+/* line 108, ../scss/main/_main.scss */
 .Hero {
   padding: 0 0 0 8%;
   min-height: 40vw;
@@ -2794,20 +2825,134 @@ h4 {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 111, ../scss/main/_main.scss */
+/* line 116, ../scss/main/_main.scss */
 .Hero h1 {
   padding: 10vw 8% 0;
   font-size: 7vw;
   color: #fff;
 }
 @media screen and (max-width: 800px) {
-  /* line 111, ../scss/main/_main.scss */
+  /* line 116, ../scss/main/_main.scss */
   .Hero h1 {
     font-size: 4em;
   }
 }
 
-/* line 130, ../scss/main/_main.scss */
+/* line 127, ../scss/main/_main.scss */
+.Hero-Gallery {
+  height: 100px;
+  width: 100%;
+}
+
+/* line 132, ../scss/main/_main.scss */
+.hero-image-gallery {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  /* On hover, add a black background color with a little bit see-through */
+}
+/* line 139, ../scss/main/_main.scss */
+.hero-image-gallery img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* line 144, ../scss/main/_main.scss */
+.hero-image-gallery .left, .hero-image-gallery .right {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* line 158, ../scss/main/_main.scss */
+.hero-image-gallery .right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* line 164, ../scss/main/_main.scss */
+.hero-image-gallery .left:hover,
+.hero-image-gallery .right:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 170, ../scss/main/_main.scss */
+.Header-Banner {
+  width: 90%;
+  margin: -213px auto 0;
+  background-color: #00948f;
+  z-index: 1000;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  height: 160px;
+}
+/* line 179, ../scss/main/_main.scss */
+.Header-Banner .wp-block-image {
+  float: left;
+  width: 180px;
+  padding: 30px 30px 0 30px;
+  margin: 0;
+}
+/* line 186, ../scss/main/_main.scss */
+.Header-Banner img {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+/* line 192, ../scss/main/_main.scss */
+.Header-Banner h2 {
+  width: 25%;
+  float: left;
+  font-size: 2em;
+  padding: 30px 30px 0;
+  color: #fff;
+}
+/* line 199, ../scss/main/_main.scss */
+.Header-Banner p {
+  width: 55%;
+  float: left;
+  padding: 30px 30px 0;
+  margin: 0;
+  color: #fff;
+}
+
+/* line 208, ../scss/main/_main.scss */
+.News {
+  width: 80%;
+  margin: 50px auto;
+}
+/* line 212, ../scss/main/_main.scss */
+.News h1 {
+  padding: 20px 0;
+}
+/* line 216, ../scss/main/_main.scss */
+.News .news-section-column {
+  width: 33%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 223, ../scss/main/_main.scss */
+.News .news-section-title {
+  font-size: 2em;
+  padding: 10px 0;
+}
+/* line 228, ../scss/main/_main.scss */
+.News .news-section-image {
+  width: 100%;
+}
+
+/* line 246, ../scss/main/_main.scss */
 .Full-Image-Panel {
   min-height: 40vw;
   background-color: #000;
@@ -2815,92 +2960,117 @@ h4 {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 137, ../scss/main/_main.scss */
+/* line 253, ../scss/main/_main.scss */
 .Full-Image-Panel h2 {
   padding: 4%;
   color: #fff;
 }
 
-/* line 144, ../scss/main/_main.scss */
+/* line 260, ../scss/main/_main.scss */
 .Inline-Image-Panel img {
   margin: 2% 0;
 }
 
-/* line 153, ../scss/main/_main.scss */
+/* line 269, ../scss/main/_main.scss */
 .Interview {
   padding: 3% 8%;
 }
-/* line 155, ../scss/main/_main.scss */
-.Interview h3 {
-  margin: 20px 0;
+/* line 271, ../scss/main/_main.scss */
+.Interview h4 {
+  font-weight: 800;
+  margin: 20px 0 0;
   padding: 0 0 40px;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+}
+/* line 278, ../scss/main/_main.scss */
+.Interview p {
+  background-color: #f5f5f5;
+  padding: 40px;
+  margin: 0;
 }
 
-/* line 165, ../scss/main/_main.scss */
+/* line 285, ../scss/main/_main.scss */
 .Events {
   padding: 3% 8%;
 }
-/* line 167, ../scss/main/_main.scss */
-.Events h1 {
-  font-size: 4vw;
-}
-/* line 170, ../scss/main/_main.scss */
-.Events h2 {
-  font-size: 2vw;
-}
-/* line 173, ../scss/main/_main.scss */
+/* line 287, ../scss/main/_main.scss */
 .Events h5 {
   font-size: 1.5vw;
+  text-transform: none;
 }
-/* line 176, ../scss/main/_main.scss */
+/* line 291, ../scss/main/_main.scss */
 .Events h6 {
   font-size: 1.5vw;
   padding: 30px;
+  color: #fff;
   background-color: #5dc9e6;
+  cursor: pointer;
 }
-/* line 181, ../scss/main/_main.scss */
+/* line 298, ../scss/main/_main.scss */
 .Events p {
   padding: 30px;
-  background-color: #dfdfdf;
+  background-color: #f5f5f5;
 }
 
-/* line 187, ../scss/main/_main.scss */
+/* line 304, ../scss/main/_main.scss */
 .Image {
   padding: 3% 8%;
 }
 
-/* line 192, ../scss/main/_main.scss */
+/* line 308, ../scss/main/_main.scss */
+.List {
+  padding: 3% 8%;
+}
+/* line 309, ../scss/main/_main.scss */
+.List h1 {
+  color: #3e3d3f;
+}
+/* line 312, ../scss/main/_main.scss */
+.List h2 {
+  color: #e54c3e;
+}
+/* line 320, ../scss/main/_main.scss */
 .List li {
-  list-style-image: url("/wp-content/uploads/2019/09/icon.png");
+  list-style: none;
+}
+/* line 323, ../scss/main/_main.scss */
+.List li:before {
+  content: '';
+  display: inline-block;
+  margin: 0 10px -4px 0;
+  height: 20px;
+  width: 20px;
+  background-image: url("/wp-content/uploads/2019/09/icon.png");
+  background-size: contain;
 }
 
-/* line 202, ../scss/main/_main.scss */
+/* line 339, ../scss/main/_main.scss */
 .section-white {
   padding: 3% 8%;
   background-color: #fff;
 }
 
-/* line 207, ../scss/main/_main.scss */
+/* line 344, ../scss/main/_main.scss */
 .section-grey {
   padding: 3% 8%;
   background-color: #dfe2e4;
 }
 
-/* line 212, ../scss/main/_main.scss */
+/* line 349, ../scss/main/_main.scss */
 .section-blue {
   padding: 3% 8%;
   background-color: #5dc9e6;
 }
 
-/* line 219, ../scss/main/_main.scss */
+/* line 356, ../scss/main/_main.scss */
 .wp-block-button {
   margin: 20px 0;
 }
 
-/* line 223, ../scss/main/_main.scss */
+/* line 360, ../scss/main/_main.scss */
 .wp-block-button__link {
-  background-color: #5dc9e6;
+  background-color: #e54c3e;
   border-radius: 6px;
   font-size: .7em;
   padding: 10px 30px;
@@ -2909,54 +3079,112 @@ h4 {
   font-weight: 600;
 }
 
-/* line 235, ../scss/main/_main.scss */
+/* line 372, ../scss/main/_main.scss */
 .block-national {
   width: 60%;
 }
 
-/* line 239, ../scss/main/_main.scss */
+/* line 376, ../scss/main/_main.scss */
 .block-quote {
   font-style: oblique;
   color: #3e3d3f;
   font-size: 2.2vw;
 }
 @media screen and (max-width: 800px) {
-  /* line 239, ../scss/main/_main.scss */
+  /* line 376, ../scss/main/_main.scss */
   .block-quote {
     font-size: 1.5em;
   }
 }
 
-/* line 13, ../scss/main/_footer.scss */
-.footer {
-  width: 100%;
-  background-color: #e54c3e;
-  padding: 2% 8% 3%;
-}
-/* line 17, ../scss/main/_footer.scss */
-.footer-image {
-  background-image: url("/wp-content/themes/alt/library/images/footer.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 300px;
-  width: 400px;
-  background-size: 400px;
-  margin-top: -20px;
-  margin-bottom: -77px;
-  margin-right: -80px;
+/* line 387, ../scss/main/_main.scss */
+.wp-block-gallery {
+  margin: 0;
 }
 
-/* line 30, ../scss/main/_footer.scss */
+/* line 13, ../scss/main/_footer.scss */
+.pre-footer {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f2;
+}
+/* line 18, ../scss/main/_footer.scss */
+.pre-footer-content {
+  color: #3e3d3f;
+  size: 1.5em;
+  font-weight: 600;
+}
+/* line 22, ../scss/main/_footer.scss */
+.pre-footer-content a {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 8px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #e54c3e;
+  border-radius: 8px;
+}
+
+/* line 35, ../scss/main/_footer.scss */
+.footer {
+  padding: 2% 8% 3%;
+  background-image: url("/wp-content/themes/alt/library/images/footerbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #e54c3e;
+  height: 300px;
+  width: 100%;
+}
+
+/* line 45, ../scss/main/_footer.scss */
+.footer-navigation-container {
+  width: 50%;
+  float: left;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+}
+/* line 51, ../scss/main/_footer.scss */
+.footer-navigation-container .nav {
+  margin: 0;
+}
+/* line 54, ../scss/main/_footer.scss */
+.footer-navigation-container li {
+  padding: 0;
+  margin: 0;
+  text-indent: 0;
+}
+/* line 60, ../scss/main/_footer.scss */
+.footer-navigation-container li a {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 150px;
+  text-align: left;
+  color: #fff !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+/* line 72, ../scss/main/_footer.scss */
+.footer-navigation-container li a:hover {
+  color: #fff !important;
+  background: none;
+  text-decoration: underline !important;
+}
+
+/* line 80, ../scss/main/_footer.scss */
 .sub-footer {
   color: #3e3d3f;
 }
-/* line 33, ../scss/main/_footer.scss */
+/* line 82, ../scss/main/_footer.scss */
 .sub-footer a {
   font-weight: nortmal !important;
   font-size: 1em !important;
   color: #3e3d3f !important;
 }
-/* line 39, ../scss/main/_footer.scss */
+/* line 87, ../scss/main/_footer.scss */
 .sub-footer span {
   color: #fff;
 }

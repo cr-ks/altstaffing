@@ -12,6 +12,7 @@ come into play. Have fun!
 
 ******************************************************************/
 
+$light-grey-opactiy: rgba(245, 245, 245, 0.8);
 
 /*********************
 GENERAL STYLES
@@ -42,8 +43,11 @@ NAVIGATION STYLES
 .nav {
 	border: 0;
 	ul {
-		background:$black;
-		margin-top:0;
+		width: 200px;
+		margin: 0;
+		padding: 10px 0;
+		box-sizing: border-box;
+		background-color: $light-grey-opactiy;
 	}
 	li {
 		float: left;
@@ -70,24 +74,26 @@ NAVIGATION STYLES
 		*/
 		ul.sub-menu,
 		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
 			position: absolute;
 			visibility: hidden;
 			z-index: 8999;
 
 			li {
+					text-align: left;
+					padding: 0 0 0 10px;
+					width: 200px;
 
 				a {
-					padding-left: 10px;
-					border-right: 0;
+					margin: 0;
+					padding: 0;
 					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
+					background: none;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						background: none;
+
+					}
 
 					&:link {}
 				}

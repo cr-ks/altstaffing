@@ -6,36 +6,84 @@
 $break: 800px;
 
 $dark-grey: #3e3d3f;
+$light-grey: #f5f5f2;
 $light-green: #5dc9e6;
 $light-red: #e54c3e;
-$background-grey: #dfe2e4;
+
+.pre-footer {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: $light-grey;
+  &-content {
+    color: $dark-grey;
+    size: 1.5em;
+    font-weight: 600;
+    a {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 0 20px;
+      padding: 8px 20px;
+      color: #fff;
+      text-decoration: none;
+      background-color: $light-red;
+      border-radius: 8px;
+    }
+  }
+}
 
 .footer {
-  width: 100%;
-  background-color: $light-red;
   padding: 2% 8% 3%;
-  &-image {
-    background-image: url('/wp-content/themes/alt/library/images/footer.png');
-    background-repeat: no-repeat;
-    background-position: center center; 
-    height: 300px;
-    width: 400px;
-    background-size: 400px;
-    margin-top: -20px;
-    margin-bottom: -77px;
-    margin-right: -80px;
+  background-image: url('/wp-content/themes/alt/library/images/footerbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-color: $light-red;
+  height: 300px;
+  width: 100%;
+}
+
+.footer-navigation-container {
+  width: 50%;
+  float: left;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  .nav {
+    margin: 0;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+    // margin: 0 40px 0 0;
+    text-indent: 0;
+  }
+  li a {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 150px;
+    text-align: left;
+    // margin: 0 -30px;
+    color: #fff !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    // padding: 10px 40px;
+
+    &:hover {
+      color: #fff !important;
+      background: none;
+      text-decoration: underline !important;
+    }
   }
 }
 
 .sub-footer {
   color: $dark-grey;
-
   a {
     font-weight: nortmal !important;
     font-size: 1em !important;
     color: $dark-grey !important;
   }
-
   span {
     color: #fff;
   }
